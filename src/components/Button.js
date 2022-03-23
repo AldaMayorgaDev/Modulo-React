@@ -2,7 +2,7 @@ import React from 'react';
 
 function Button({children, color}) {
     return(
-      <button style= {{background: color, color: "white"}}>{children}</button>
+      <button className="btnCard">{children}</button>
     );
   }
 
