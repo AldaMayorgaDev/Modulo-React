@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function DatosProducto({nombre,talla, precio}){
     return(
         <div>

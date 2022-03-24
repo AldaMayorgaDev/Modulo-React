@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Button({children, color}) {
+function Button({textBtn, color}) {
     return(
-      <button className="btnCard">{children}</button>
+      <button className="btnCard">{textBtn}</button>
     );
   }
 
