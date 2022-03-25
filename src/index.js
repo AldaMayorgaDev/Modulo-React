@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import InLineStyle from './components/inline-Styles/index';
+import ModuleStyles from './components/Module-Styles/index';
+import ReactBootstrap from './components/React-bootstrap/react-bootstrap';
+//import Form from './components/OnChange-Event/index';
+//import Form from './components/OnSubmit-Event/index';
+//import ButtonConEvento from './components/OnClick-Event/index';
+// import CardBootstrap from './components/Card-RectBootstrap/index.jsx';
+import CustomForm from './components/CustomForm/index';
+/* Importando Bootstrap aqui */
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CustomForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
