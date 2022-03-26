@@ -1,25 +1,46 @@
-// import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.scss';
-//import Button from '../src/components/Button'
-//import Card from './components/Card'
-import Card from './components/Cards'
-import Button from './components/Button'
 
-import CardBootstrap from'./components/Card-RectBootstrap/index.jsx';
+/* Ejemplo de prop drilling */
 
-function App() {
-
+function Saludo() {
+  const [name, setName]= useState('Aldahir');
   return (
-   <div>
-     <header>Clase 4- useState </header>
-     <div className="Card-Container">
-       {/* <Card /> */}
-       <CardBootstrap/>
-        <CardBootstrap/>
-        <CardBootstrap/>
-      
-     </div>
-   </div>
+    <div><Titulo name={name}/> </div>
+  );
+}
+
+function Titulo(props) {
+  return (
+    <div><NombreEnPantalla name={props.name}/></div>
+  );
+}
+
+function NombreEnPantalla(props) {
+  return (
+    <div>Bienvenido {props.name}</div>
+  );
+}
+
+function SectionCategorias() {
+  return (
+    <div>Categorias</div>
+  );
+}
+
+function SectionProductos() {
+  return (
+    <div>Productos</div>
+  );
+}
+function App() {
+  return (
+    <div>
+      <header>Clase 5- e </header>
+      <Saludo />
+      <SectionCategorias />
+      <SectionProductos />
+    </div>
   );
 }
 

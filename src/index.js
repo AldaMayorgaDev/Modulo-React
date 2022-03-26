@@ -13,13 +13,13 @@ import ReactBootstrap from './components/React-bootstrap/react-bootstrap';
 //import CustomForm from './components/CustomForm/index';
 
 //import CountExample from './components/Count-UseState/count.js';
-import FormNew from './components/Form/index'
+//import FormNew from './components/Form/index'
 /* Importando Bootstrap aqui */
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormNew />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
