@@ -10,13 +10,16 @@ import ReactBootstrap from './components/React-bootstrap/react-bootstrap';
 //import Form from './components/OnSubmit-Event/index';
 //import ButtonConEvento from './components/OnClick-Event/index';
 // import CardBootstrap from './components/Card-RectBootstrap/index.jsx';
-import CustomForm from './components/CustomForm/index';
+//import CustomForm from './components/CustomForm/index';
+
+//import CountExample from './components/Count-UseState/count.js';
+import FormNew from './components/Form/index'
 /* Importando Bootstrap aqui */
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CustomForm />
+    <FormNew />
   </React.StrictMode>,
   document.getElementById('root')
 );

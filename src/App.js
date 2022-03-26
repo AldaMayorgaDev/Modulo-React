@@ -5,16 +5,19 @@ import './App.scss';
 import Card from './components/Cards'
 import Button from './components/Button'
 
+import CardBootstrap from'./components/Card-RectBootstrap/index.jsx';
+
 function App() {
 
   return (
    <div>
-     <header>Clase 3- React estilos con sass y eventos</header>
+     <header>Clase 4- useState </header>
      <div className="Card-Container">
-       <Card />
-       <Card />
-       <Card />
-       <Card />
+       {/* <Card /> */}
+       <CardBootstrap/>
+        <CardBootstrap/>
+        <CardBootstrap/>
+      
      </div>
    </div>
   );
