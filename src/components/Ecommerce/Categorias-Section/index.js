@@ -1,15 +1,16 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
-import Categorias from '../../../data/categorias.json';
+//import Categorias from '../../../data/categorias.json';
 
 
-function CategoriasSection() {
+function CategoriasSection(props) {
+	const {categorias} = props;
 	
 	return (
 		<div style={{ margin: '2rem 0' }}>
 			<h4>Categorias</h4>
-			{Categorias.map((Categoria)=>{
-				return (<Badge pill className='mr-4'key={Categoria} style={{ margin: '.1rem' }}>{Categoria}</Badge>);
+			{ categorias.map((categoria)=>{
+				return (<Badge pill className='mr-4'key={categoria} style={{ margin: '.1rem' }}>{categoria}</Badge>);
 			})}
 		</div>
 	);

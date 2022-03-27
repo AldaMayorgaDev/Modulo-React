@@ -2,19 +2,20 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import CardBootstrap from '../Card-RectBootstrap/index.jsx';
-import Productos from '../../../data/productos.json';
+//import Productos from '../../../data/productos.json';
 
 
 function ProductSection(props) {
-	const {anadirCarrito}= props;
+	const {anadirCarrito, productos, loading}= props;
 	
 	return (
 		<div>
-			<h4>New Products</h4>
-			<Container fluid>
+			<h4>New Products {loading} </h4>
+			<Container fluid >
 				<Row>
-					{Productos.map((Producto)=>{
-						const {id, title, price, description, image }=Producto;
+				
+					{productos.map((producto)=>{
+						const {id, title, price, description, image }=producto;
 						return(
 							<CardBootstrap
 							anadirCarrito={anadirCarrito}
