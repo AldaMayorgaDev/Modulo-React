@@ -3,6 +3,7 @@ import NavBar from '../components/Ecommerce/Navbar/index';
 import CategoriasSection from '../components/Ecommerce/Categorias-Section/index';
 import GreetingSection from '../components/Ecommerce/Greeting-Section/index';
 import ProductSection from '../components/Ecommerce/Products-Section/index';
+import FormEcommerce from '../components/Ecommerce/Form/index'
 
 function Home(){
     const [carrito, setCarrito] = useState(0);
@@ -51,10 +52,11 @@ function Home(){
     return (
         <div>
             <NavBar carrito={carrito}/>
-                <GreetingSection />
+               {/*  <GreetingSection />
                 
                 <CategoriasSection categorias={categorias}/>
-                <ProductSection anadirCarrito={anadirCarrito} productos={productos} loading={loading}/>
+                <ProductSection anadirCarrito={anadirCarrito} productos={productos} loading={loading}/> */}
+            <FormEcommerce />    
         </div>
     );
 }
